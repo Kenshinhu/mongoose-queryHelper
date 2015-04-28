@@ -1,5 +1,5 @@
 {
-  "name": "m_queryhelper",
+  "name": "monngoose-queryhelper",
   "version": "0.0.1",
   "description": "为 Mongoose 4.0.x 而写的 简易查询辅助工具",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Kenshinhu/mongoose-queryHelper/issues"
   },
-  "homepage": "https://github.com/Kenshinhu/mongoose-queryHelper#readme"
+  "homepage": "https://github.com/Kenshinhu/mongoose-queryHelper#readme",
+  "dependencies": {
+    "mongoose": "^4.0.2"
+  }
 }
