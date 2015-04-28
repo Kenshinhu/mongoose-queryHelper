@@ -1,0 +1,19 @@
+{
+  "name": "m_queryhelper",
+  "version": "0.0.1",
+  "description": "为 Mongoose 4.0.x 而写的 简易查询辅助工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenshinhu/mongoose-queryHelper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenshinhu/mongoose-queryHelper/issues"
+  },
+  "homepage": "https://github.com/Kenshinhu/mongoose-queryHelper#readme"
+}
