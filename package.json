@@ -1,5 +1,5 @@
 {
-  "name": "monngoose-queryhelper",
+  "name": "mongoose-queryhelper",
   "version": "0.0.1",
   "description": "为 Mongoose 4.0.x 而写的 简易查询辅助工具",
   "main": "index.js",
