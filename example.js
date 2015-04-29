@@ -25,6 +25,13 @@ m.model('my_users',userSchema);
 
 
 var q = new queryHelper("my_users");
-q.query().exec(function(err,result){
+
+//query all data
+//q.query().exec(function(err,result){
+//    console.log(result);
+//})
+
+//query like by name
+q.query({name:queryHelper.like("%Riley")}).exec(function(err,result){
     console.log(result);
-})
+});

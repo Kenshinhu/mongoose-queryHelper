@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kenshinhu/mongoose-queryHelper.git"
+    "url": "git://github.com/Kenshinhu/mongoose-queryHelper.git"
   },
   "author": "",
   "license": "ISC",
