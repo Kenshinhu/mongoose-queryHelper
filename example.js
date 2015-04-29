@@ -22,11 +22,12 @@ var q = new queryHelper("my_users",userModel.mongoose);
 //})
 
 //query like by name
-//q.query({name:queryHelper.like("%Riley")}).exec(function(err,result){
-//    console.log(result);
-//});
+q.query({name:queryHelper.like("%Riley")}).exec(function(err,result){
+    console.log("-----");
+    console.log(result);
+});
 
 q.query().limit(1,10).pagination(function(err,data,total,totalPage,currentPage){
-
+    console.log("-----");
     console.log(arguments);
 });
