@@ -4,27 +4,17 @@
 
 
 var queryHelper = require('./index');
+var userModel = require('./userModel');
 
 
-var m = require('mongoose');
-    m.connect('mongodb://localhost/mock_data');
 
-var s = m.Schema;
-
-var userSchema = new s({
-    name:String,
-    password:String,
-    mobile:String,
-    status:Boolean,
-    createTime:Date
-});
 
 // var comment = m.model('User', userSchema);
 
-m.model('my_users',userSchema);
 
 
-var q = new queryHelper("my_users");
+
+var q = new queryHelper("my_users",userModel.mongoose);
 
 //query all data
 //q.query().exec(function(err,result){
