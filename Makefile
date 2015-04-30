@@ -23,8 +23,8 @@ test-cov cov: install
 		node_modules/.bin/istanbul cover --preserve-comments \
 		./node_modules/.bin/_mocha \
 		--report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage \
+		-t $(TEST_TIMEOUT) \
 		-r should \
-		--timeout $(TEST_TIMEOUT) \
 		$(TESTS)
 
 test-coveralls: install
