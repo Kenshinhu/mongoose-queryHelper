@@ -25,5 +25,8 @@
     "mocha-lcov-reporter": "0.0.2",
     "mongoose": "^4.0.2",
     "should": "^6.0.1"
+  },
+  "dependencies": {
+    "promise": "^7.0.1"
   }
 }
