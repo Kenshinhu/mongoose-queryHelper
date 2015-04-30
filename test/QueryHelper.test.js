@@ -95,8 +95,7 @@ describe(__filename, function () {
             .sort('ip_address')
             .limit(1,10)
             .pagination(function(err,data,total,totalPage,currentPageIndex){
-                console.log(arguments);
-                data.length.should.be.above(0);
+                data.length.should.be.above(1);
                 total.should.be.above(0);
                 totalPage.should.be.above(0);
                 currentPageIndex.should.be.above(0);
