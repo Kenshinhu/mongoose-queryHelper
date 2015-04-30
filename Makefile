@@ -1,6 +1,6 @@
 TESTS = $(shell find test -type f -name "*.test.js")
 TEST_TIMEOUT = 5000
-MOCHA_REPORTER = spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+MOCHA_REPORTER = spec
 # NPM_REGISTRY = "--registry=http://registry.npm.taobao.org"
 NPM_REGISTRY = ""
 
@@ -22,9 +22,8 @@ test-cov cov: install
 	@NODE_ENV=test node \
 		node_modules/.bin/istanbul cover --preserve-comments \
 		./node_modules/.bin/_mocha \
-		--report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage \
-		-t $(TEST_TIMEOUT) \
 		-r should \
+		--report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage \
 		$(TESTS)
 
 test-coveralls: install
