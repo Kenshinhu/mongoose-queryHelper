@@ -22,7 +22,6 @@ test-cov cov: install
 	@NODE_ENV=test node \
 		node_modules/.bin/istanbul cover --preserve-comments \
 		./node_modules/.bin/_mocha \
-		-r should \
 		--report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage \
 		$(TESTS)
 
