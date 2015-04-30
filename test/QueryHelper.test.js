@@ -100,7 +100,6 @@ describe(__filename, function () {
                 total.should.be.above(0);
                 totalPage.should.be.above(0);
                 currentPageIndex.should.be.above(0);
-
                 done();
             })
 
