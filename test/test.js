@@ -53,9 +53,9 @@ var Favor = mongoose.model('Favor', favorSchema);
 
 var qh = new queryHelper("Post",mongoose);
 
-qh.query({}).select(2).exec(function(err,result){
-    console.log(JSON.stringify(result,'','\t'));
-})
+qh.query({}).limit(1,200).pagination(function(err,result){
+    console.log(JSON.stringify(arguments,'','\t'));
+});
 
 
 

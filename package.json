@@ -1,6 +1,6 @@
 {
   "name": "mongoose-queryhelper",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "为 Mongoose 4.0.x 而写的 简易查询辅助工具",
   "main": "index.js",
   "scripts": {
