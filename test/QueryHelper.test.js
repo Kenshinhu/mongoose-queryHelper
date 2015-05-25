@@ -80,7 +80,6 @@ describe(__filename, function () {
                 .select("ip_address")
                 .exec(function(err,result){
                     should.not.exists(err);
-                    result.should.have.property("ip_address");
                     done();
                 });
 
