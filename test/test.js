@@ -53,9 +53,8 @@ var Favor = mongoose.model('Favor', favorSchema);
 
 var qh = new queryHelper("Post",mongoose);
 
-qh.query({}).limit(1,200).pagination(function(err,result){
-    console.log(JSON.stringify(arguments,'','\t'));
-});
-
+qh.query({"title":"orci luctus"}).exec(function(err,result){
+    console.log(result);
+})
 
 
