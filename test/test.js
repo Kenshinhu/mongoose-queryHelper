@@ -53,8 +53,16 @@ var Favor = mongoose.model('Favor', favorSchema);
 
 var qh = new queryHelper("Post",mongoose);
 
-qh.query({"title":"orci luctus"}).exec(function(err,result){
-    console.log(result);
+qh.query({"title":"orci luctus"})
+    .sort("-createAt")
+    .exec(function(err,result){
+
+        qh.query({"title":"sit"})
+            .sort("-createAt")
+            .pagination(function(err,result){
+                console.log(arguments);
+            })
+
 })
 
 
